@@ -1,0 +1,74 @@
+.accordionWrapper {
+  margin-bottom: 32px;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordionHeader {
+  height: 60px;
+  border-left: 3.2px solid #5999e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 0 27px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.accordionTitle {
+  font-size: clamp(.8rem, -0.875rem + 8.333vw, 1.2rem);
+}
+
+.accordionBody {
+  color: #A3A3A3FF;
+  background: #FFFFFF;
+  box-shadow: #808080FF 0px 6.4px 3.2px -7.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div[class*="Collapsible__contentOuter"] {
+  box-shadow: #808080ff 0px 6.4px 3.2px -7.2px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+

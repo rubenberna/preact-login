@@ -1,0 +1,122 @@
+.addAccountTitle {
+  color: #000000;
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(.5rem, -0.875rem + 8.333vw, .75rem) !important;
+}
+
+.addAccountForm {
+  width: 75%;
+  padding: 27px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  align-items: end;
+}
+
+@media (max-width: 1024px) {
+  .addAccountForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .addAccountForm {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .addAccountForm {
+    grid-template-columns: 100%;
+  }
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  text-transform: uppercase;
+  font-size: clamp(.6rem, -0.875rem + 8.333vw, .7rem) !important;
+  margin-bottom: 2px;
+}
+
+.formInput {
+  height: 30px;
+  font-size: clamp(.7rem, -0.875rem + 8.333vw, .9rem) !important;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 1px 10px;
+  color: #666;
+}
+
+.formInput:focus-visible {
+  outline: none;
+}
+
+.autocomplete {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.autocomplete hr {
+  display: none !important;
+}
+
+.autocomplete input {
+  font-size: clamp(.7rem, -0.875rem + 8.333vw, .9rem) !important;
+  width: 100% !important;
+}
+
+.autocomplete div[class*="icon"]  > span{
+  transform: rotate(90deg) !important;
+}
+
+.autoCompleteIcon {
+  cursor: pointer;
+}
+
+.autocomplete > :last-child::-webkit-scrollbar {
+  display: none;
+}
+
+.autocomplete > :last-child {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.autocomplete li[class*="active"] {
+  background-color: #e1dfdd !important;
+}
+
+#formButton {
+  width: clamp(6rem, -0.875rem + 8.333vw, 9rem);
+  height: 36px;
+  cursor: pointer;
+  border-radius: 18px;
+  border: 1px solid #4A90E2;
+  font-size: clamp(.7rem, -0.875rem + 8.333vw, .9rem);
+  text-transform: uppercase;
+  color: #4a90e2;
+  background: #FFFFFF;
+  transition: .2s all ease;
+}
+
+#formButton:hover {
+  background-color: #4a90e2;
+  color: #FFFFFF;
+}
+
+#formButton:focus-visible {
+  outline: none;
+}
+
+.error {
+  border: 1px solid #c4001a !important;
+}
+
+

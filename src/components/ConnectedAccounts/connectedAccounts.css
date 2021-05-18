@@ -1,0 +1,23 @@
+.connectedAccounts {
+  padding: 35px 27px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connectedAccounts:not(:last-child) {
+  border-bottom: 1px solid #cccccc;
+}
+
+.connectedHeader {
+  padding: 23px 27px;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #cccccc;
+}
+
+.disconnect {
+  color: #4A90E2;
+  cursor: pointer;
+}
