@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.connectedAccountsZero {
+  padding: 23px;
+}
+
 .connectedAccounts:not(:last-child) {
   border-bottom: 1px solid #cccccc;
 }

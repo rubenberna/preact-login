@@ -27,7 +27,7 @@ export const ConnectedAccounts = ({ connectedAccounts, removeAccount }) => {
         </div>
       )
     }
-    return <span>No connected customer accounts</span>
+    return <span class={style.connectedAccountsZero}>No connected customer accounts</span>
   }
 
   const props = {
