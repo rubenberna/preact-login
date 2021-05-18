@@ -32,7 +32,10 @@
 }
 
 @media (max-width: 768px) {
-  .logo {
+  .header {
+    margin-bottom: 2rem;
+  }
+  .logoContainer {
     display: none;
   }
 }

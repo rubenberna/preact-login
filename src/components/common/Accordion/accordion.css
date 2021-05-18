@@ -18,8 +18,15 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .accordionHeader {
+    padding: 5px;
+  }
+}
+
 .accordionTitle {
-  font-size: clamp(.8rem, -0.875rem + 8.333vw, 1.2rem);
+  font-size: clamp(.6rem, -0.875rem + 8.333vw, 1.1rem);
+  width: 90%;
 }
 
 .accordionBody {

@@ -1,9 +1,9 @@
 .addAccountTitle {
   color: #000000;
-  padding: 27px;
+  padding: 27px 27px 0 27px;
   display: flex;
   flex-direction: column;
-  font-size: clamp(.5rem, -0.875rem + 8.333vw, .75rem) !important;
+  font-size: clamp(.5rem, -0.875rem + 8.333vw, .73rem) !important;
 }
 
 .addAccountForm {
@@ -16,19 +16,7 @@
   align-items: end;
 }
 
-@media (max-width: 1024px) {
-  .addAccountForm {
-    width: 100%;
-  }
-}
-
 @media (max-width: 768px) {
-  .addAccountForm {
-    grid-template-columns: 100%;
-  }
-}
-
-@media (max-width: 414px) {
   .addAccountForm {
     grid-template-columns: 100%;
   }
